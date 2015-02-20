@@ -1,5 +1,5 @@
-within ExtraMath;
-function erfc "error function"
+within ExtraMath.ErrorGamma;
+function erfc "complementary error function"
   extends Modelica.Icons.Function;
   input Real u;
   output Real y;
