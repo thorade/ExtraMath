@@ -1,15 +1,16 @@
 within ExtraMathTest;
-function testReferenceEquality
-  "compare calculated result with reference result"
-  extends Modelica.Icons.Function;
+model testReferenceEquality "compare calculated result with reference result"
 
-  input Real calculated;
-  input Real reference;
-  input String message = "Test failed";
-  input AssertionLevel aLevel = AssertionLevel.warning;
-  input Real eps(min=0) = Modelica.Constants.eps;
-  output Boolean testPassed =  Modelica.Math.isEqual(calculated, reference, eps);
+  parameter String testName = "";
+  parameter Real calculated;
+  parameter Real reference;
+  parameter AssertionLevel aLevel=AssertionLevel.error;
+  parameter Real eps(min=0) = Modelica.Constants.eps;
+  Boolean testResult = Modelica.Math.isEqual(calculated, reference,eps);
+
+protected
+  String message = "Test failed: " + testName + "\n";
 
 algorithm
-  assert(testPassed, message, level=aLevel);
+  assert(testResult, message, level=aLevel);
 end testReferenceEquality;
