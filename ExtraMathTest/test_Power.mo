@@ -29,7 +29,22 @@ model test_Power "testing the functions from the Power package"
 
   ExtraMathTest.testReferenceEquality pow1(
     testName="pow1",
-    calculated=ExtraMath.Power.pow(3.0,4.0),
-    reference=81.0);
+    calculated=ExtraMath.Power.pow(2.0,3.0),
+    reference=8.0);
+
+  ExtraMathTest.testReferenceEquality pow2(
+    testName="pow2",
+    calculated=ExtraMath.Power.pow(3.0,0.0),
+    reference=1.0);
+
+  ExtraMathTest.testReferenceEquality pow3(
+    testName="pow3",
+    calculated=ExtraMath.Power.pow(0.0,3.0),
+    reference=0.0);
+
+  ExtraMathTest.testReferenceEquality pow4(
+    testName="pow4",
+    calculated=ExtraMath.Power.pow(0.0,0.0),
+    reference=1.0) "dangerous";
 
 end test_Power;
