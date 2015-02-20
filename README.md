@@ -2,11 +2,12 @@
 
 This library aims at making available to Modelica some of the mathematical functions
 that are defined in the C99 standard,
-but that do not yet have a definition in the Modelica Standard Library.  
+but that do not yet have a definition in the Modelica Standard Library (MSL).  
 A description of mathematical functions in C is given on Wikipedia:  
 https://en.wikipedia.org/wiki/C_mathematical_functions  
 Support for these functions will depend on many things, including operating system, compiler, C version and more.
-This library will therefore not work everywhere.
+This library will therefore not work everywhere,
+and this is probably the reason why these functions are not included in the MSL.
 
 ## Windows
 Microsoft extended their support for C99 a lot in Visual Studio 2013:  
