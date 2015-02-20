@@ -1,3 +1,4 @@
 testReferenceEquality
-test_ErrorGamma
+test_Exponential
 test_Power
+test_ErrorGamma
