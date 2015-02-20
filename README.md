@@ -1,6 +1,8 @@
 # Extra Math
 
-This library aims at making available to Modelica most mathematical functions defined in the C99 standard.
+This library aims at making available to Modelica some of the mathematical functions
+that are defined in the C99 standard,
+but that do not yet have a definition in the Modelica Standard Library.
 A description of mathematical functions in C is given on Wikipedia:  
 https://en.wikipedia.org/wiki/C_mathematical_functions  
 Support for these functions will depend on many things, including operating system, compiler, C version and more.
