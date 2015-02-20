@@ -1,5 +1,6 @@
 within ExtraMathTest;
-partial function testReferenceEquality "error function"
+function testReferenceEquality
+  "compare calculated result with reference result"
   extends Modelica.Icons.Function;
 
   input Real calculated;
