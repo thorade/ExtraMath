@@ -1,5 +1,6 @@
 within ExtraMathTest;
-model test_ErrorGamma
+model test_ErrorGamma "testing the functions from the ErrorGamma package"
+  extends Modelica.Icons.Example;
 
   ExtraMathTest.testReferenceEquality erf1(
     testName="erf1",
