@@ -12,10 +12,10 @@ model test_ErrorGamma "testing the functions from the ErrorGamma package"
     calculated=ExtraMath.ErrorGamma.erf(2),
     reference=0.9953222650189527);
 
-    //
+    // erf + erfc should always sum up to 1
   ExtraMathTest.testReferenceEquality sum_erf_erfc(
     testName="sum_erf_erfc",
-    calculated=ExtraMath.ErrorGamma.erf(0.5) + ExtraMath.ErrorGamma.erfc(0.5),
+    calculated=ExtraMath.ErrorGamma.erf(0.37) + ExtraMath.ErrorGamma.erfc(0.37),
     reference=1);
 
 end test_ErrorGamma;
