@@ -9,7 +9,7 @@ model testReferenceEquality "compare calculated result with reference result"
   Boolean testResult = Modelica.Math.isEqual(calculated, reference,eps);
 
 protected
-  String message = "Test failed: " + testName + "\n";
+  String message = "Test " + testName + " failed:\n  calculated=" + String(calculated) + "\n   reference=" + String(reference) + "\n";
 
 algorithm
   assert(testResult, message, level=aLevel);
