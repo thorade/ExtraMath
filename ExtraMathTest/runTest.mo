@@ -10,4 +10,10 @@ model runTest
     testName="erf2",
     calculated=ExtraMath.erf(2),
     reference=0.9953222650189527);
+
+    //
+  ExtraMathTest.testReferenceEquality sum_erf_erfc(
+    testName="sum_erf_erfc",
+    calculated=ExtraMath.erf(0.5)+ExtraMath.erfc(0.5),
+    reference=1);
 end runTest;
