@@ -16,4 +16,5 @@ model test_ErrorGamma
     testName="sum_erf_erfc",
     calculated=ExtraMath.ErrorGamma.erf(0.5) + ExtraMath.ErrorGamma.erfc(0.5),
     reference=1);
+
 end test_ErrorGamma;
