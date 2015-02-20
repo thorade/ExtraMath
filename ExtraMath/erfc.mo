@@ -1,4 +1,4 @@
-within MathLib;
+within ExtraMath;
 function erfc "error function"
   extends Modelica.Icons.Function;
   input Real u;

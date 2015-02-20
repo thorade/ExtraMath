@@ -1,4 +1,4 @@
-within MathLib;
+within ExtraMath;
 function tgamma "logarithmic gamma function"
   input Real u;
   output Real y;
