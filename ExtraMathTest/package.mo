@@ -1,5 +1,5 @@
 within ;
-package ExtraMathTest "Tests for the ExtraMAth library"
+package ExtraMathTest "Tests for the ExtraMath library"
 
 
 
