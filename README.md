@@ -11,7 +11,7 @@ and this is probably the reason why these functions are not included in the MSL.
 
 ## Windows
 Microsoft extended their support for C99 a lot in Visual Studio 2013:  
-http://blogs.msdn.com/b/vcblog/archive/2013/07/19/c99-library-support-in-visual-studio-2013.aspx
+http://blogs.msdn.com/b/vcblog/archive/2013/07/19/c99-library-support-in-visual-studio-2013.aspx  
 Documentation for what mathematical functions are supported can be found here:  
 https://msdn.microsoft.com/library/hh553049.aspx  
 or in the Visual Studio `math.h` header file, usually here:  
