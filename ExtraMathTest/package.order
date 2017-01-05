@@ -2,4 +2,5 @@ testReferenceEquality
 test_Exponential
 test_Power
 test_ErrorGamma
-test_Tester
+test_Success
+test_Failure

@@ -1,20 +1,20 @@
 within ExtraMathTest;
-model test_Tester "testing the test functions"
+model test_Failure "testing the test functions"
   extends Modelica.Icons.Example;
 
   ExtraMathTest.testReferenceEquality powMSL(
     testName="powMSL",
-    calculated=2^3,
-    reference=8.0);
+    calculated=0.2^3.14,
+    reference=13.08);
 
   ExtraMathTest.testReferenceEquality logMSL(
     testName="logMSL",
-    calculated=Modelica.Math.log(Modelica.Constants.e),
-    reference=1.0);
+    calculated=Modelica.Math.log(45.879),
+    reference=7.701);
 
   ExtraMathTest.testReferenceEquality expMSL(
     testName="expMSL",
-    calculated=Modelica.Math.exp(1.0),
-    reference=Modelica.Constants.e);
+    calculated=Modelica.Math.exp(3.0),
+    reference=19.4);
 
-end test_Tester;
+end test_Failure;
