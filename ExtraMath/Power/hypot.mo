@@ -4,5 +4,5 @@ function hypot "square root of the sum of the squares of two given numbers"
   input Real x;
   input Real y;
   output Real z;
-external"C" z = hypot(x, y);
+external "builtin" z = hypot(x, y);
 end hypot;

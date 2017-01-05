@@ -4,5 +4,5 @@ function pow "raises a number to the given power"
   input Real base;
   input Real exponent;
   output Real y;
-  external"C" y = pow(base, exponent);
+  external "builtin" y = pow(base, exponent);
 end pow;
