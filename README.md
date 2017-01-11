@@ -18,4 +18,5 @@ or in the Visual Studio `math.h` header file, usually here:
 `C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h`
 
 ## Linux
-... should work
+At least the compiler flag `-std=c99` (or `-std=gnu99`) should be set for the compilers gcc and clang
+to support the C99 standard.
