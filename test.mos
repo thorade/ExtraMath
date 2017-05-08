@@ -1,0 +1,2 @@
+simulateModel("ExtraMathTest.test_Success", stopTime=4, method="dassl", resultFile="test_Success");
+exit

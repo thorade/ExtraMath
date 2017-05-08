@@ -1,0 +1,36 @@
+dist: trusty
+language: python
+python:
+  - "2.7"
+
+cache: pip
+
+notifications:
+  email: false
+
+git:
+  depth: 5
+
+addons:
+  apt:
+    packages:
+    - sshpass
+    - libjpeg62
+    - libqt5x11extras5
+    - libqt5script5
+    - libc6-dev-i386 
+    - g++-multilib
+
+before_install:
+  - sshpass -e scp -o StrictHostKeyChecking=no jup68rav@ww2.arch.udk-berlin.de:~/dymola_2017.2-1_amd64.deb dymola.deb
+
+install:
+#  - pip install --upgrade pip setuptools wheel
+#  - pip install --only-binary=numpy,scipy,matplotlib numpy scipy matplotlib
+#  - pip install git+https://github.com/lbl-srg/BuildingsPy@master
+  - sudo dpkg -i dymola.deb
+
+# Execute test
+script:
+  - xvfb-run dymola -nowindow test.mos
+  - ls
