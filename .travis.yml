@@ -1,0 +1,31 @@
+dist: trusty
+sudo: false
+language: python
+python:
+  - "2.7_with_system_site_packages"
+notifications:
+  email: false
+#
+# commands to install dependencies and the script itself
+addons:
+  apt:
+    sources:
+    - sourceline: "deb http://build.openmodelica.org/apt `lsb_release -cs` nightly"
+      key_url: "http://build.openmodelica.org/apt/openmodelica.asc"
+    packages:
+    - omc
+    - omlib-modelica-3.2.2
+    - omniorb
+    - python-omniorb
+    - omniidl
+    - omniidl-python
+    - tidy
+install:
+  - pip install git+git://github.com/OpenModelica/OMPython.git
+  - pip install pytidylib
+#
+# commands to run the tests
+script: 
+  - python --version
+  - omc --version
+  - python test_Script.py

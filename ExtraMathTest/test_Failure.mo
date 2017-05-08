@@ -16,5 +16,19 @@ model test_Failure "testing the test functions"
     testName="expMSL",
     calculated=Modelica.Math.exp(3.0),
     reference=19.4);
+    
+  annotation (Documentation(info="<html>
+<p>
+This test should always fail.
+<p>
+</p>
+</html>",
+revisions="<html>
+<ul>
+<li>2017-02-10 by Matthis Thorade:<br/>
+add info and revision.
+</li>
+</ul>
+</html>"));
 
 end test_Failure;
