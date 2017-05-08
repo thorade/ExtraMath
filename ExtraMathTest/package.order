@@ -1,6 +1,7 @@
 testReferenceEquality
 test_Exponential
 test_Power
+test_Hyperbolic
 test_ErrorGamma
 test_Success
 test_Failure
