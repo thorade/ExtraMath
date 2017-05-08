@@ -1,8 +1,4 @@
 within ;
 package ExtraMathTest "Tests for the ExtraMath library"
-
-
-
-
-annotation (preferredView="text", uses(Modelica(version="3.2.2")));
+  annotation(preferredView="text", uses(ExtraMath(version="1.0.0"), Modelica(version="3.2.2")), version="1.0.0");
 end ExtraMathTest;
