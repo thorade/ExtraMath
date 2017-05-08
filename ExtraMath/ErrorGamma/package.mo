@@ -1,6 +1,3 @@
 within ExtraMath;
-package ErrorGamma 
-
-
-
+package ErrorGamma "Error and gamma functions"
 end ErrorGamma;
