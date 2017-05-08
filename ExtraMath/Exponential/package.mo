@@ -1,3 +1,3 @@
 within ExtraMath;
-package Exponential 
+package Exponential "Exponential functions"
 end Exponential;

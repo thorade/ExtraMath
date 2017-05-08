@@ -1,3 +1,3 @@
 within ExtraMath;
-package Power 
+package Power "Power functions"
 end Power;
