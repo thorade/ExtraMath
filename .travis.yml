@@ -4,6 +4,8 @@ python:
   - "2.7_with_system_site_packages"
 notifications:
   email: false
+git:
+  depth: 5
 services:
   - docker
 before_install:
@@ -13,4 +15,4 @@ before_install:
 script: 
   - python --version
   - docker images
-  - ls
+  - ls -laR
