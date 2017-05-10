@@ -15,6 +15,5 @@ before_install:
 script: 
   - python --version
   - docker images
-  - ls -laR
   - cd /home
-  - ls -laR
+  - ls --recursive
