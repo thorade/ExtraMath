@@ -1,0 +1,15 @@
+dist: trusty
+language: python
+python:
+  - "2.7_with_system_site_packages"
+notifications:
+  email: false
+services:
+  - docker
+before_install:
+  - docker pull modelicainaction/jmodelica:latest
+#
+# commands to run the tests
+script: 
+  - python --version
+  - docker images
