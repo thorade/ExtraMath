@@ -15,5 +15,7 @@ before_install:
 script: 
   - python --version
   - docker images
-  - cd /home/thorade
+  - pwd
   - ls --recursive
+  - cd ..
+  - ls
