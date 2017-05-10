@@ -13,3 +13,4 @@ before_install:
 script: 
   - python --version
   - docker images
+  - ls
