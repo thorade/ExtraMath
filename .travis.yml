@@ -1,6 +1,4 @@
-dist: trusty
 language: generic
-sudo: false
 notifications:
   email: false
 git:
