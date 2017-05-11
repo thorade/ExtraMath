@@ -1,0 +1,22 @@
+dist: trusty
+language: generic
+sudo: required
+notifications:
+  email: false
+git:
+  depth: 5
+addons:
+  apt:
+    packages:
+      - sshpass
+before_install:
+   - sshpass -e scp -o StrictHostKeyChecking=no jup68rav@ww2.arch.udk-berlin.de:~/moparser moparser
+install:
+  - sudo chmod +x ./moparser
+#
+# commands to run the tests
+script: 
+  - pwd
+  - ls
+  - ./moparser -ler ExtraMath
+  - ./moparser -ler ExtraMathTest
