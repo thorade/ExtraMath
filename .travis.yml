@@ -1,6 +1,6 @@
 dist: trusty
 language: generic
-sudo: required
+sudo: false
 notifications:
   email: false
 git:
@@ -12,7 +12,7 @@ addons:
 before_install:
    - sshpass -e scp -o StrictHostKeyChecking=no jup68rav@ww2.arch.udk-berlin.de:~/moparser moparser
 install:
-  - sudo chmod +x ./moparser
+  - chmod +x ./moparser
 #
 # commands to run the tests
 script: 
