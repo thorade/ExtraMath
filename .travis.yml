@@ -19,7 +19,7 @@ addons:
 install:
   - pip install --upgrade pip setuptools wheel
   - pip install --only-binary=numpy numpy
-  - pip install git+git://github.com/thorade/OMPython.git
+  - pip install git+git://github.com/OpenModelica/OMPython.git
   - pip install pytidylib
 #
 # commands to run the tests
