@@ -3,8 +3,8 @@ import unittest
 class TestMathFunctions(unittest.TestCase):
 
     def test_checkModel(self):
-        from OMPython import OMCSession
-        omc = OMCSession()
+        from OMPython import OMCSessionZMQ
+        omc = OMCSessionZMQ()
         cmds = [
             "loadModel(Modelica)",
             "loadFile(\"ExtraMath/package.mo\")",
@@ -21,9 +21,9 @@ class TestMathFunctions(unittest.TestCase):
 
     def test_checkHTML(self):
         from tidylib import tidy_document
-        from OMPython import OMCSession
+        from OMPython import OMCSessionZMQ
         libs = ["ExtraMath", "ExtraMathTest"]
-        omc = OMCSession()
+        omc = OMCSessionZMQ()
 
         header = """<?xml version='1.0' encoding='utf-8'?>
                 <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"

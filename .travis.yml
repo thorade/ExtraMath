@@ -2,7 +2,7 @@ dist: trusty
 sudo: false
 language: python
 python:
-  - "2.7_with_system_site_packages"
+  - "3.5"
 notifications:
   email: false
 #
@@ -15,10 +15,6 @@ addons:
     packages:
     - omc
     - omlib-modelica-3.2.2
-    - omniorb
-    - python-omniorb
-    - omniidl
-    - omniidl-python
     - tidy
 install:
   - pip install git+git://github.com/OpenModelica/OMPython.git
