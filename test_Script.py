@@ -6,6 +6,7 @@ class TestMathFunctions(unittest.TestCase):
         from OMPython import OMCSessionZMQ
         omc = OMCSessionZMQ()
         cmds = [
+            "getVersion()",
             "loadModel(Modelica)",
             "loadFile(\"ExtraMath/package.mo\")",
             "loadFile(\"ExtraMathTest/package.mo\")",
