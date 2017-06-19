@@ -20,6 +20,8 @@ addons:
     - omlib-modelica-3.2.2
     - tidy
 install:
+  - pip install --upgrade pip setuptools wheel
+  - pip install --only-binary=numpy numpy
   - pip install https://github.com/OpenModelica/OMPython/archive/master.zip
   - pip install pytidylib
 #
