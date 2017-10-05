@@ -1,7 +1,8 @@
 within ExtraMathTest;
 model testReferenceEquality "compare calculated result with reference result"
 
-  parameter String testName = "";
+  final parameter String instanceName = getInstanceName();
+  parameter String testName = Modelica.Utilities.Strings.substring(instanceName, Modelica.Utilities.Strings.findLast(instanceName, ".") + 1, Modelica.Utilities.Strings.length(instanceName));
   parameter Real calculated;
   parameter Real reference;
   parameter AssertionLevel aLevel=AssertionLevel.error;
